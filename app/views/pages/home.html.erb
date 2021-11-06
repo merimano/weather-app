@@ -1,1 +1,44 @@
-<h1>Hej</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Geocoder</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- TODO: Put your HTML code in here -->
+    <div id="banner">
+      <div class="container text-center" >
+        <h1>Find your place in the sun!</h1>
+        <p>Search for any location until you find where the sun is shining.</p>
+        <form class="form-inline" id="search-form">
+          <input type="text" class="form-control" id="search-text" maxlength="256" placeholder="Dream location">
+          <button type="submit">Show me</button>
+        </form>
+        <div class="map-container">
+          <div id="location">
+            <p>Temperature:</p>
+            <p class="yellowText" id="temperature" ></p>
+            <div class="weather-icon"><img src="openweathermap-api-icons/icons/unknown.png" /></div>
+            <p id="coordinates-text">Coordinates:</p>
+            <div class="yellowText" id="coordinates"></div>
+            <div id="list">
+            </div>
+
+          </div>
+          <div id="map" style="height: 400px; width: 1000px"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
