@@ -1,0 +1,99 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+body {
+  margin: 0px;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#banner {
+  background-image: asset-url('palmtrees.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400px;
+  color:  #FDE12D;
+  font-size:  60px;
+  margin-top: 0px;
+  padding-top: 30px;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300px;
+  color:  #fffff2;
+  font-size:  16px;
+}
+
+button {
+  color: #FDE12D;
+  background-color: #dc795a;
+  border: 2px solid #FDE12D;
+  border-radius: 15px;
+  font-size:18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300px;
+  margin: 5px;
+  padding: 7px 30px 7px 30px;
+}
+
+button:hover {
+  color: #dc795a;
+  background-color: #FDE12D;
+}
+
+#search-text {
+  color:  grey;
+  background-color: #fffff2;
+  border-radius: 15px;
+  border: 0px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px;
+  padding: 7px 30px 7px 30px;
+}
+
+#search-text:hover {
+  border: 3px solid #FDE12D;
+}
+
+.map-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#location {
+  flex: 1 40px;
+  text-align:  center;
+  background: #E29178;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+#map {
+  border-radius: 10px;
+  flex: 5 200px;
+  margin: 30px 30px 30px 0px;
+}
+
+.yellowText {
+  font-size: 22px;
+  color: #FDE12D;
+  padding: 12px;
+  font-family: 'Roboto', sans-serif;
+}
