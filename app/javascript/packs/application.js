@@ -14,3 +14,14 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+import { findLocation, findIcon } from '../javascript/channels/index.js';
+
+document.addEventListener('turbolinks:load', () => {
+    findLocation();
+});
+
+document.addEventListener('turbolinks:load', () => {
+    findIcon();
+});
+
